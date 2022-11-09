@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ body{
+     background-color: rgb(242,242,242);
+ }
+ #top-container{
+ 
+     overflow: hidden;
+     /* position: fixed; */
+     z-index: 999;
+     width: 100%;
+     /* position: -webkit-sticky; */
+     position: sticky;
+     top: 0;
+
+ }
+ #navbar{
+     height: 100%;
+     background-color: white;
+     display: flex;
+     align-items:center ;
+     justify-content: space-around;
+     padding: 25px 5px;
+
+ }
+ img{
+     /* background-color: red; */
+     width: 16%;
+ }
+ .inp{
+     /* background-color: rgb(201, 50, 50); */
+     width: 28%;
+     display: flex;
+     border: 0.6px solid black;
+
+ } 
+
+ #search{
+     padding: 10px;
+     width: 230%;
+     border: none;
+ }
+ button{
+     width: 25%;
+     background-color: white;
+     border: none;
+ }
+ button:hover{
+     background-color: rgb(245, 239, 239);
+ }
+
+ #acc-log{
+     display: flex; 
+     justify-content: space-between;
+     width: 250px;
+ }
+  #acc-log>a{
+     text-decoration: none;
+     color: rgb(0, 0, 0);
+     font-size: 18px; 
+     font-weight: 300px;
+ }
+ #acc-log>a>i{
+     font-size: 22px;
+     padding: 5px;
+ } 
+ #mid{
+     /* height: 50px; */
+     margin-top: -5px;
+     background-color: white;
+     padding: 10px 80px ;
+ }
+ #mid ul{
+     justify-content: space-evenly;
+     display: flex;
+     margin-right: 300px;
+     margin-top: -11px;
+     align-items: center;
+     height: 200%;
+     padding: 10px;
+     margin-bottom: -11px;
+     /* padding: 15px; */
+
+ } 
+ #mid >ul li{
+     padding: 10px;
+     height: 100%;
+     width: 100%;
+     margin-top: -11px;
+     margin-bottom: -10px;
+     margin-left: -10px;
+     text-align: center;
+     /* border:1px solid red; */
+
+ }
+ #mid >ul li:hover{
+     background-color: black;
+     color: white;
+ }
+
+
+
+  #mid >ul a{
+     text-decoration: none;
+     color: black;
+     list-style-type: none;
+     font-size: 12px;
+     color: rgb(160, 161, 161);
+     padding: 2px;
+ }
+ hr{
+     background-color: black;
+ }
+ #tt{
+     display: flex;
+     justify-content: end;
+     align-items: center;
+ }
+#tt>a{
+ padding: 10px;
+ text-decoration: none;
+ color: rgb(22, 22, 22);
+ width: 5%;
+ font-size: 14px;
+ font-family: "Lato-Light",Helvetica,Arial,sans-serif;
+}
+#redo{
+ /* color: red; */
+}
+#redo{
+ display: flex;
+ text-align: center;
+ /* background-color: red; */
+ justify-content: center;
+ padding: 5px;
+}
+#redo>div{
+ text-align: center;
+ margin: 10px 20px;
+ padding: 5px;
+ /* background-color: teal; */
+}
+#redo>div>a{
+ text-decoration: none;
+ color: black;
+ margin-left: 10px;
+ padding: 5px;
+}
+#redo>div>i{
+ margin-left: 10px;
+}
+#main-container{
+ background-color: rgb(255, 255, 255);
+ padding: 15px;
+}
+#main-container>#worth{
+background-color: rgb(0, 0, 0);
+color: white;
+width: 90%;
+margin: auto;
+padding: 10px;
+}
+/* #main-container>#worth:hover{
+    background-color: white;
+    color: black;
+} */
+#worth>a{
+text-decoration: none;
+color: white;
+text-align: center;
+}
+
+#carosal{
+ height: 450px;
+ width: 90%;
+ padding: 10px;
+ margin:20PX auto;
+ background-color: rgb(144, 216, 216);
+}
+
+.heading{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.shop_pro{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    
+}
+
+.shop_pro>a>img{
+   width: 100%;
+    border-radius: 100%;
+}
+#trend_pro{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;display: grid;
+    line-height: 1.7;
+    padding: 5px;
+}
+#trend_pro>a{
+    text-decoration: none;
+    color: rgb(76, 91, 104);
+}
+#trend_pro>a>div>img{
+    width: 100%;
+    border-radius: 100%;
+     
+ }
+ #trend_pro>a>div{
+    margin-top: 5px;
+    /* border: 1px solid red; */
+    /* text-align: center; */
+ }
+ #trend_pro>a>div+div{
+    margin-top: 5px;
+    /* border: 1px solid red; */
+    text-align: center;
+ }
+#trend_pro>a>div+div>.shop{
+    margin-top: 10px;
+    padding: 12px 10px;
+    border: 1px solid black;
+    color: rgb(76, 91, 104);
+    cursor: pointer;
+}
+
+#trend_pro>a>div+div>.shop:hover{
+  background-color: rgb(164, 220, 220);
+
+}
+
+#people{
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 25px;
+        line-height: 1.7;
+        padding: 5px;
+        text-align: center;
+    }
+    
+#people>a{
+    text-decoration: none;
+    color: rgb(76, 91, 104);
+}
+#people>a>div>img{
+    width: 100%;
+    border-radius: 100%;
+        
+    }
+    #people>a>h3{
+       margin-top: 40px;
+            
+        }
+    #people>a>#shop_2{
+        margin-top: 10px;
+        padding: 12px 10px;
+        width: 100%;
+        background-color: rgb(51,51,51);
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+    }
+    #people>a>#shop_2:hover{
+        background-color: rgb(155, 202, 202);
+        color: black;
+    }
+
+    #card{
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 25px;
+        align-items: center;
+    }
+    #card>a>img{
+        width: 100%;
+    }
+    #blog{
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+        /* background-color: red; */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+        line-height: 1.7;
+        padding: 5px;
+    }
+    #blog>a{
+        text-decoration: none;
+        color: rgb(76, 91, 104);
+    }
+    #blog>a>div>img{
+        width: 100%;
+        border-radius: 100%;
+         
+     }
+     #blog>a>div{
+        margin-top: 5px;
+        /* border: 1px solid red; */
+        /* text-align: center; */
+     }
+     #blog>a>div+div{
+        margin-top: 5px;
+        /* border: 1px solid red; */
+        text-align: center;
+     }
+    #blog>a>div+div>.read{
+        margin-top: 10px;
+        padding: 12px 10px;
+        border: 1px solid black;
+        color: rgb(76, 91, 104);
+        cursor: pointer;
+    }
+    
+    #blog>a>div+div>.read:hover{
+      background-color: rgb(164, 220, 220);
+    
+    }
