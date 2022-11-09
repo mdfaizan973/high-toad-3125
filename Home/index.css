@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
  body{
      background-color: rgb(242,242,242);
@@ -17,6 +17,7 @@
      top: 0;
 
  }
+ 
  #navbar{
      height: 100%;
      background-color: white;
@@ -172,7 +173,7 @@ text-decoration: none;
 color: white;
 text-align: center;
 }
-
+/* carousal effect css here *************************************************************************************** */
 #carosal{
  height: 450px;
  width: 90%;
@@ -180,6 +181,7 @@ text-align: center;
  margin:20PX auto;
  background-color: rgb(144, 216, 216);
 }
+
 
 .heading{
     width: 90%;
@@ -210,7 +212,7 @@ text-align: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 25px;display: grid;
-    line-height: 1.7;
+    line-height: 1.2;
     padding: 5px;
 }
 #trend_pro>a{
@@ -253,7 +255,7 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(4,1fr);
         gap: 25px;
-        line-height: 1.7;
+        line-height: 1.2;
         padding: 5px;
         text-align: center;
     }
@@ -261,17 +263,24 @@ text-align: center;
 #people>a{
     text-decoration: none;
     color: rgb(76, 91, 104);
+    height: 100%;
+    /* background-color: red; */
 }
 #people>a>div>img{
     width: 100%;
     border-radius: 100%;
         
     }
+ #people>a>div+div{
+    /* background-color: rgb(103, 207, 167); */
+    align-items: end;
+
+ }
     #people>a>h3{
        margin-top: 40px;
             
         }
-    #people>a>#shop_2{
+    #people>a>.dn>#shop_2{
         margin-top: 10px;
         padding: 12px 10px;
         width: 100%;
@@ -279,7 +288,7 @@ text-align: center;
         color: rgb(255, 255, 255);
         cursor: pointer;
     }
-    #people>a>#shop_2:hover{
+    #people>a>.dn>#shop_2:hover{
         background-color: rgb(155, 202, 202);
         color: black;
     }
@@ -304,7 +313,7 @@ text-align: center;
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 25px;
-        line-height: 1.7;
+        line-height: 1.3;
         padding: 5px;
     }
     #blog>a{
@@ -326,6 +335,12 @@ text-align: center;
         /* border: 1px solid red; */
         text-align: center;
      }
+     #blog>a>div>h3{
+        margin: 10px ;
+        font-size: 20px;
+        color: black;
+
+     }
     #blog>a>div+div>.read{
         margin-top: 10px;
         padding: 12px 10px;
@@ -337,4 +352,160 @@ text-align: center;
     #blog>a>div+div>.read:hover{
       background-color: rgb(164, 220, 220);
     
+    }
+    .hrr{
+        margin-top: 20px;
+    }
+
+    #topfoot{
+        width: 90%;
+        height: 100px;
+        margin:30px auto;
+        display: flex;
+    }
+    #topfoot>.topfoot_1{
+        /* background-color: red; */
+        height: 100px;
+        width: 50%;
+    }
+    #topfoot>.topfoot_1>button{
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        width: 20%;
+        padding:  20px ;
+        cursor: pointer;
+        font-size: 15px;
+    }
+    #topfoot>.topfoot_1>button:hover{
+        background-color: rgb(76, 165, 165);
+        color: rgb(0, 0, 0);
+    }
+    #topfoot>.topfoot_2{
+        /* background-color: rgb(150, 176, 32); */
+        height: 100px;
+        width: 50%;
+    }
+    .topfoot_2>.icon{
+align-items: center;
+        margin-left: -12px;
+    }
+    .icon{
+        margin-top: 20px;
+    }
+    .icon>a>img{
+        width: 11%;
+    }
+    .icon a>.ins{
+        width: 6%;
+    }
+    .icon a>.twi{
+        width: 7%;
+        margin-left: 5px;
+    }
+    .icon a>.pai{
+        width: 7%;
+        margin-right:-2%;
+
+    }
+    .icon a>.sna{
+        width: 11%;
+        border-radius: 100%;
+    }
+
+    /* footer  ***************************************** */
+    #footer{
+        margin: 10px auto ;
+        width: 90%;
+        display: flex;
+    }
+
+    #footer>.info{
+        width: 50%;
+        height: 100%;
+        /* background-color: red; */
+    }
+    #footer>.info>a{
+        color: rgb(163, 156, 156);
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .info>p{
+        padding: 5px;
+        margin-top: 15px;
+    }
+    
+    #footer>.info>a>div{
+        width: 50%;
+        padding:12px 10px;
+        margin-top: 2px;
+        margin-left: -5px;
+    }
+    #footer>.info>a>div:hover{
+        background-color: rgb(190, 189, 189);
+    }
+
+    #footer>.footer_p2{
+        width: 50%;
+        display: flex;
+    }
+    
+
+    .fhr{
+        /* margin: auto; */
+        width: 90%;
+    }
+    .f2hr{
+        width: 85%;
+    }
+
+    #footer>.footer_p2>.about{
+        width: 50%;
+        height: 100%;
+        /* background-color: red; */
+    }
+    #footer>.footer_p2>.about>a{
+        color: rgb(163, 156, 156); 
+        text-decoration: none;
+        font-size: 15px;
+    }
+    .about>p{
+        padding: 5px;
+        /* margin-top: 15px; */
+        margin-top: 20px;
+
+    }
+    .footer_p2>.about>a>i{
+       
+        padding: 10px;
+    }
+    #footer>.footer_p2>.about>a>div{
+        width:75%;
+        padding:12px 10px;
+        margin-top: 2px;
+        margin-left: -5px;
+    }
+    #footer>.footer_p2>.about>a>div:hover{
+        background-color: rgb(190, 189, 189);
+    }
+
+    #thg{
+        width: 100%;
+        margin: 15px auto;
+        display: flex;
+        width: 90%;
+        
+    }
+    #thg>.thg_child{
+        width: 50%;
+        padding: 5px;
+    }
+    #thg>.thg_child>p{
+        margin-left: 10px;
+    }
+   
+    .bank{
+        width: 90%;
+        margin-top: 8px;
+        margin-left: 5px;
     }
