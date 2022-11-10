@@ -550,3 +550,54 @@ align-items: center;
         margin-top: 8px;
         margin-left: 5px;
     }
+
+
+    /* ***********************product page ui**************************** */
+
+    #proui{
+        display: grid !important;
+        grid-template-columns: repeat(3,1fr) !important;
+        width: 75%;
+        margin:70px auto;
+        gap: 20px;
+    
+    }
+  
+    #proui>.card{
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        line-height: 1.4;
+        color: rgb(92, 91, 91);
+        padding: 5px;
+        border-radius: 10px;
+
+    }
+
+   
+    #proui>.card>img{
+        width: 100%;
+        opacity: 0.6;
+        margin-bottom: 20px;
+    }
+    
+    #proui>.card>h2{
+        color: black;
+    }
+    #proui>.card>h5{
+        /* border: 1px solid red; */
+        width: 60%;
+        padding: 5px;
+        margin: 10px 0;
+        cursor: pointer;
+
+    }
+    #proui>.card>button{
+        background-color: rgb(45, 45, 45);
+        padding: 15px;
+        width: 100%;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    #proui>.card>button:hover{
+        background-color: rgb(143, 143, 143);
+    }
