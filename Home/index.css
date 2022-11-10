@@ -179,13 +179,49 @@ color: white;
 text-align: center;
 }
 /* carousal effect css here *************************************************************************************** */
-#carosal{
- height: 450px;
- width: 90%;
- padding: 10px;
- margin:20PX auto;
- background-color: rgb(144, 216, 216);
-}
+
+.carosal {
+    position: relative;
+    width: 90%;
+    margin: 20px auto;
+    /* height: 600px; */
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    /* height: auto; */
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 90%;
+    left: 0;
+    right: 0;
+    /* background-color: #008CBA; */
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+
+  
+  .carosal:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 
 .heading{
