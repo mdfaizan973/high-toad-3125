@@ -133,9 +133,9 @@
  font-size: 14px;
  font-family: "Lato-Light",Helvetica,Arial,sans-serif;
 }
-#redo{
+/* #redo{ */
  /* color: red; */
-}
+/* } */
 #redo{
  display: flex;
  text-align: center;
