@@ -24,13 +24,18 @@
      display: flex;
      align-items:center ;
      justify-content: space-around;
-     padding: 25px 5px;
+     padding: 23px 5px;
 
  }
- img{
+
+ #logos{
+    width: 16%;
+ }
+ #us{
      /* background-color: red; */
      width: 16%;
  }
+
  .inp{
      /* background-color: rgb(201, 50, 50); */
      width: 28%;
@@ -108,8 +113,8 @@
      text-decoration: none;
      color: black;
      list-style-type: none;
-     font-size: 12px;
-     color: rgb(160, 161, 161);
+     font-size: 14px;
+     color: rgb(115, 116, 116);
      padding: 2px;
  }
  hr{
