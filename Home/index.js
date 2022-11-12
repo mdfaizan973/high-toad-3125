@@ -635,7 +635,7 @@ let lsdata= JSON.parse(localStorage.getItem('Cartss')) || []
 
 
 function show() {
-    let show=  document.querySelector('#holi')
+    let show=  document.querySelector('#holi');
     show.style.visibility='visible'
     let blur=document.querySelector('#main-comtainer')
     blur.style.visibility='hidden'
