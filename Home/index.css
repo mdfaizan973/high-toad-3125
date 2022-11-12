@@ -55,7 +55,8 @@
      border: none;
  }
  button:hover{
-     background-color: rgb(245, 239, 239);
+     background-color: rgb(139, 231, 225);
+     
  }
 
  #acc-log{
@@ -448,7 +449,7 @@ text-align: center;
         font-size: 15px;
     }
     #topfoot>.topfoot_1>button:hover{
-        background-color: rgb(76, 165, 165);
+        background-color: rgb(82, 153, 153);
         color: rgb(0, 0, 0);
     }
     #topfoot>.topfoot_2{
@@ -630,5 +631,85 @@ align-items: center;
         cursor: pointer;
     }
     #proui>.card>button:hover{
-        background-color: rgb(143, 143, 143);
+        background-color: rgb(136, 209, 204);
+        color: black;
     }
+
+
+    /* hover*********** */
+    #holi{
+        margin: 70px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        visibility: hidden;
+        z-index: +1;
+        position: absolute;
+        padding: 20px;
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    }
+    
+  
+   #holi>div{
+        padding: 20px;
+
+   }
+    hr{
+        background-color: black;
+        
+    }
+    h1{
+        font-size: 50px;
+        width: 80%;
+        margin: auto;
+    }
+    .sale{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        justify-content: space-evenly;
+       text-align: center;
+       width: 65%;
+       margin:70px 20px;
+       gap: 10px;
+       background-color: rgb(249, 249, 249);
+       visibility: hidden;
+       position: absolute;
+       padding: 40px;
+       z-index: +1;
+       box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    }
+    .sale>div{
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        cursor: pointer;
+        background-color: white;
+     }
+     .sale>div:hover{
+         background-color: rgb(227, 227, 227);
+     }
+
+     .skincare{
+        margin:50px 20px;
+        background-color: rgb(249, 249, 249);
+        visibility: hidden;
+        position: absolute;
+        padding: 40px;
+        z-index: +1;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     }
+
+     table{
+        padding: 12x;
+    }
+    table th {
+        padding: 10px;
+    }
+    table td{
+        padding: 6px;
+        cursor: pointer;
+    }
+    table td:hover{
+        color: rgb(152, 151, 151);
+    }
+    

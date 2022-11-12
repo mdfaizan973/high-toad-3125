@@ -1,5 +1,4 @@
 
-console.log("faizan")
 let arr =[
     {
         'img':'https://static.thcdn.com/images/xsmall/original//productimg/original/12673805-1194865842860753.jpg',
@@ -577,7 +576,7 @@ const  display=(data )=>{
     
 
     document.querySelector('#homeui').innerHTML=''
-    // document.querySelector('#proui').innerHTML=''
+    document.querySelector('#proui').innerHTML=''
 
 
     
@@ -610,9 +609,11 @@ const  display=(data )=>{
 
         sh_btn.addEventListener('click', () =>{
 
-            buydata.push(el)
-            localStorage.setItem('cart',JSON.stringify(buydata))
+            lsdata.push(el)
 
+            let ls=localStorage.setItem('Carts', JSON.stringify(lsdata))
+            console.log(ls)
+  
         })
 
 
@@ -625,4 +626,49 @@ const  display=(data )=>{
 
 }
 
-let buydata = JSON.parse(localStorage.getItem('cart')) || []
+let lsdata= JSON.parse(localStorage.getItem('Cartss')) || []
+
+
+
+
+// hovereffect *********************** function \/\**/\/************************
+
+
+function show() {
+    let show=  document.querySelector('#holi')
+    show.style.visibility='visible'
+    let blur=document.querySelector('#main-comtainer')
+    blur.style.visibility='hidden'
+  
+  }
+  function hide(){
+    let show=  document.querySelector('#holi')
+    show.style.visibility='hidden'
+  
+  }
+
+  function showsl() {
+    let show=  document.querySelector('.sale')
+    show.style.visibility='visible'
+    let blur=document.querySelector('#main-comtainer')
+    blur.style.visibility='hidden'
+  
+  }
+  function hidesl(){
+    let show=  document.querySelector('.sale')
+    show.style.visibility='hidden'
+  
+  }
+
+  function showssk() {
+    let show=  document.querySelector('.skincare')
+    show.style.visibility='visible'
+    let blur=document.querySelector('#main-comtainer')
+    blur.style.visibility='hidden'
+  
+  }
+  function hidessk(){
+    let show=  document.querySelector('.skincare')
+    show.style.visibility='hidden'
+  
+  }
